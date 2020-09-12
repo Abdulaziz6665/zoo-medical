@@ -60,7 +60,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #e5e5e5;
-  height: 1000px;
 }
 
 .header-nav-top {
@@ -73,6 +72,14 @@ body {
 .adress-zoo-madical {
   width: 470px;
   text-align: right;
+}
+
+.header-tel-links a:hover {
+  color: #FFBD54;
+}
+
+.header-tel-links a:active {
+  color: rgba(51, 51, 51, 0.5);
 }
 
 .before-element::before {
@@ -127,6 +134,14 @@ body {
   transform: translateY(-50%);
 }
 
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.5;
+}
+
 .list-wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -147,13 +162,18 @@ body {
   background-image: url(../img/fish-active.png);
 }
 
-.header-bottom-item {
-  padding: 20px;
-}
-
 .header-bottom-item a {
+  padding: 20px;
   color: #333;
   text-decoration: none;
+}
+
+.header-bottom-item a:hover {
+  background-color: #FFBD54;
+}
+
+.header-bottom-item a:active {
+  background-color: rgba(255, 189, 84, 0.5);
 }
 
 .ask-questions {
@@ -162,8 +182,268 @@ body {
   text-decoration: none;
 }
 
+.ask-questions:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.ask-questions:active {
+  opacity: 0.5;
+}
+
 .mini-pet::before {
   width: 23px;
   height: 20px;
   background-image: url(../img/mini-pet.png);
+}
+
+/* =======care-about-animals======= */
+
+.container-padding {
+  padding: 0;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/header-group.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #e5e5e5;
+}
+
+.care-about-animals {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  margin-left: auto;
+  margin-right: 50px;
+  height: 100%;
+  width: 608px;
+}
+
+.care-about-animals h1 {
+  margin: 0;
+  color: #333;
+  font-size: 70px;
+  line-height: 64px;
+}
+
+.care-about-animals .title-color {
+  margin-bottom: 29px;
+  color: rgb(100, 221, 230, 0.8);
+}
+
+.care-about-animals p{
+  max-width: 495px;
+  margin: 0;
+  color: #949494;
+  line-height: 21px;
+  margin-bottom: 38px;
+}
+
+.our-jobs a{
+  display: inline-block;
+  padding: 16px 48px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  text-decoration: none;  
+}
+
+.our-jobs a:hover {
+  color: #333;
+  background-color: #ffbd54;
+}
+
+.our-jobs a:active {
+  opacity: 0.5;
+}
+
+/* ===========quote=========== */
+
+.quote-wrapper {
+  padding-bottom: 190px;
+}
+
+.quote {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hr-quote {
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #dbdbdb;
+}
+
+.quote-margin-b {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.quote-block {
+  width: 753px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #949494;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.quote::before,
+.quote::after {
+  content: "";
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/quote-pic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.quote::after {
+  margin-left: auto;
+  transform: rotate(180deg);
+}
+
+.name-clinic {
+  color: #333;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* =========slider========= */
+
+.slider-wrapper {
+  position: relative;
+}
+
+.title-slider {
+  margin: 0;
+  margin-bottom: 80px;
+  color: #333;
+  font-size: 48px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.slider-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.slider-list-item {
+  min-width: 188px;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-list-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.slider-list-item:hover a{
+  color: #FFBD54;
+  cursor: pointer;
+}
+
+.slider-list-item:active {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slider-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.pic1::before {
+  background-image: url(../img/slider-doctor.png);
+}
+
+.pic2::before {
+  background-image: url(../img/woman-dog.png);
+}
+
+.pic3::before {
+  background-image: url(../img/dog.png);
+}
+
+.pic4::before {
+  background-image: url(../img/dog2.png);
+}
+
+.pic5::before {
+  background-image: url(../img/microskop.png);
+}
+
+.pic6::before {
+  background-image: url(../img/dog-plus.png);
+}
+
+.pic7::before {
+  background-image: url(../img/uzi-dog.png);
+}
+
+.pic8::before {
+  background-image: url(../img/igle.png);
+}
+
+.pic9::before {
+  background-image: url(../img/colendar.png);
+}
+
+.pic10::before {
+  background-image: url(../img/igle-bottle.png);
+}
+
+.pic11::before {
+  background-image: url(../img/dog-teeth.png);
+}
+
+.pic12::before {
+  background-image: url(../img/box.png);
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+  border: none;
+  background: none;
+}
+
+.slider-item-wrapper {
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
 }
