@@ -1,39 +1,169 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
-       url('../fonts/open-sans-v17-latin-regular.woff') format('woff');
+  src: url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"),
+       url("../fonts/open-sans-v17-latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/open-sans-v17-latin-italic.woff2') format('woff2'),
-       url('../fonts/open-sans-v17-latin-italic.woff') format('woff');
+  src: url("../fonts/open-sans-v17-latin-italic.woff2") format("woff2"),
+       url("../fonts/open-sans-v17-latin-italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'),
-       url('../fonts/open-sans-v17-latin-600.woff') format('woff');
+  src: url("../fonts/open-sans-v17-latin-600.woff2") format("woff2"),
+       url("../fonts/open-sans-v17-latin-600.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/open-sans-v17-latin-700italic.woff2') format('woff2'),
-       url('../fonts/open-sans-v17-latin-700italic.woff') format('woff');
+  src: url("../fonts/open-sans-v17-latin-700italic.woff2") format("woff2"),
+       url("../fonts/open-sans-v17-latin-700italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
-       url('../fonts/open-sans-v17-latin-700.woff') format('woff');
+  src: url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"),
+       url("../fonts/open-sans-v17-latin-700.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", serif;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e5e5e5;
+  height: 1000px;
+}
+
+.header-nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.adress-zoo-madical {
+  width: 470px;
+  text-align: right;
+}
+
+.before-element::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 9px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/mini-home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.tel-pic::before {
+  background-image: url(../img/mini-tel.png);
+}
+
+.ellips-pic::before {
+  width: 5px;
+  height: 5px;
+  background-image: url(../img/ellipse.png);
+}
+
+.header-tel-links a {
+  margin-left: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.work-days {
+  display: flex;
+}
+
+.calendar-pic::before {
+  background-image: url(../img/mini-calendar.png);
+}
+
+.header-nav-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.list-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 107px;
+}
+
+.header-bottom-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.fish-pic::before {
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/fish-active.png);
+}
+
+.header-bottom-item {
+  padding: 20px;
+}
+
+.header-bottom-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.ask-questions {
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.mini-pet::before {
+  width: 23px;
+  height: 20px;
+  background-image: url(../img/mini-pet.png);
 }
