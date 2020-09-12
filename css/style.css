@@ -59,7 +59,7 @@ body {
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 0.5);
 }
 
 .header-nav-top {
@@ -208,7 +208,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 0.5);
 }
 
 .care-about-animals {
@@ -341,8 +341,12 @@ body {
   overflow: hidden;
 }
 
+.slider-list li:nth-child(1) {
+  margin-left: 0;
+}
+
 .slider-list-item {
-  min-width: 188px;
+  min-width: 193px;
   margin: 15px;
   padding: 30px;
   border-radius: 5px;
@@ -427,7 +431,7 @@ body {
 .btn {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -25px;
   transform: translateY(-50%);
   border: none;
   background: none;
@@ -436,7 +440,7 @@ body {
 .btn-right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -25px;
   transform: translateY(-50%) rotate(180deg);
   border: none;
   background: none;
@@ -444,6 +448,180 @@ body {
 
 .slider-item-wrapper {
   display: flex;
-  padding: 15px;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 127px;
+  border-radius: 5px;
   background-color: #fff;
+}
+
+.slider-text {
+  width: 492px;
+  height: 100%;
+  margin-left: 58px;
+}
+
+.slider-text h3 {
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.slider-text p {
+  color: #949494;
+  line-height: 20px;
+}
+
+.slider-text a {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.slider-text a::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+  margin-right: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.info-price {
+  background-color: #ffdb54;
+  margin-right: 24px;
+}
+
+.info-price:hover {
+  background-color: #333;
+}
+
+.info-price:active {
+  opacity: 0.5;
+}
+
+.info-price::before {
+  background-image: url(../img/info-price.png);
+}
+
+.writes {
+  background-color: #333;
+}
+
+.writes:hover {
+  background-color: #ffdb54;
+}
+
+.writes:active {
+  opacity: 0.5;
+}
+
+.writes::before {
+  background-image: url(../img/writes.png);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.before-element::before{
+  background-image: url(../img/mini-home.png);
+  }
+
+.tel-pic::before {
+  background-image: url(../img/mini-tel.png);
+  }
+
+  .ellips-pic::before {
+  background-image: url(../img/ellipse.png);
+  }
+
+  .calendar-pic::before {
+  background-image: url(../img/mini-calendar.png);
+  }
+
+  .fish-pic::before {
+  background-image: url(../img/fish-active.png);
+  }
+
+  .mini-pet::before {
+  background-image: url(../img/mini-pet.png);
+  }
+
+  .container-padding{
+  background-image: url(../img/header-group.png);
+  }
+
+  .quote::before,
+  .quote::after {
+  background-image: url(../img/quote-pic.png);
+  }
+
+  .pic1::before {
+  background-image: url(../img/slider-doctor.png);
+  }
+
+  .pic2::before {
+  background-image: url(../img/woman-dog.png);
+  }
+
+  .pic3::before {
+  background-image: url(../img/dog.png);
+  }
+
+  .pic4::before {
+  background-image: url(../img/dog2.png);
+  }
+
+  .pic5::before {
+  background-image: url(../img/microskop.png);
+  }
+
+  .pic6::before {
+  background-image: url(../img/dog-plus.png);
+  }
+
+  .pic7::before {
+  background-image: url(../img/uzi-dog.png);
+  }
+
+  .pic8::before {
+  background-image: url(../img/igle.png);
+  }
+
+  .pic9::before {
+  background-image: url(../img/colendar.png);
+  }
+
+  .pic10::before {
+  background-image: url(../img/igle-bottle.png);
+  }
+
+  .pic11::before {
+  background-image: url(../img/dog-teeth.png);
+  }
+
+  .pic12::before {
+  background-image: url(../img/box.png);
+  }
+
+  .info-price::before {
+  background-image: url(../img/info-price.png);
+  }
+
+  .writes::before {
+  background-image: url(../img/writes.png);
+  }
+
+  .sign-up {
+  background-image: url(../img/bg-dog.png);
+  }
 }
