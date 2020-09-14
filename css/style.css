@@ -52,6 +52,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", serif;
+  height: 5000px;
 }
 
 .container {
@@ -60,6 +61,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .header-nav-top {
@@ -208,7 +211,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: rgba(229, 229, 229, 0.5);
 }
 
 .care-about-animals {
@@ -318,6 +320,10 @@ body {
 }
 
 /* =========slider========= */
+
+.con-slide-wrapper {
+  padding-bottom: 235px;
+}
 
 .slider-wrapper {
   position: relative;
@@ -450,7 +456,6 @@ body {
   display: flex;
   align-items: center;
   padding: 0 30px;
-  margin-bottom: 127px;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -522,6 +527,134 @@ body {
 
 .writes::before {
   background-image: url(../img/writes.png);
+}
+
+/* ============subscribe============ */
+
+.subscribe {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 0 90px 0;
+  background-image: url(../img/pet-group.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-bg {
+  background: none;
+  margin-left: 450px;
+}
+
+.title-subscribe {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.input-subscribe {
+  width: 335px;
+  padding: 18px;
+  margin-right: 21px;
+  border: none;
+  border-radius: 5px;
+}
+
+.container-bg form {
+  margin-bottom: 29px;
+}
+
+.btn-subscribe {
+  display: inline-block;
+  padding: 18px 60px;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  
+}
+
+.container-bg img {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+/* ===========articles=========== */
+
+.articles {
+  padding-top: 216px;
+}
+
+.articles-title {
+  font-size: 48px;
+  margin-bottom: 80px;
+  color: #333;
+  text-align: center;
+}
+
+.articles-wrapper-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.articles-item {
+  background-color: #fff;
+  width: 305px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 30px;
+}
+
+.date {
+  margin: 0;
+  text-align: right;
+}
+
+.item-middle {
+  display: flex;
+  width: 620px;
+}
+
+.item-middle img {
+  height: auto;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-link {
+  display: inline-block;
+  margin-top: auto;
+  color: #333;
+  text-decoration: none;
+}
+
+.article-link:hover {
+  color: #ffbd54;
+}
+
+.article-link:active {
+  opacity: 0.5;
+}
+
+.color-blue {
+  margin-right: 2px;
+  color: #3D9CEA;
 }
 
 @media
